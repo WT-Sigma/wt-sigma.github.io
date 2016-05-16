@@ -1,16 +1,36 @@
 angular.module('SigmaApp', ['ngMaterial'])
   .config(function($mdThemingProvider) {
+    var darkMap = $mdThemingProvider.extendPalette('grey', {
+      '300': '000000',
+      '500': '212121',
+      '800': '303030',
+      'A100': '424242',
+      'contrastDefaultColor': 'light'
+    });
+    $mdThemingProvider.definePalette('dark', darkMap);
+
     $mdThemingProvider.theme('default')
-      .primaryPalette('grey', {
-        'default': '800',
-        'hue-1': '700',
-        'hue-2': '900'
+      .primaryPalette('dark', {
+        'default': '300',
+        'hue-1': '500',
+        'hue-2': '800',
+        'hue-3': 'A100'
       })
-      .accentPalette('blue-grey', {
+      .backgroundPalette('dark', {
         'default': '800'
-      })
-      .dark();
+      });
   })
   .controller('SigmaController', function($scope) {
     console.log('Sigma initialized.')
+  })
+  .filter('range', function() {
+    return function(input, total) {
+      total = parseInt(total);
+
+      for (var i=0; i<total; i++) {
+        input.push(i);
+      }
+
+      return input;
+    };
   });
