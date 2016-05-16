@@ -17,18 +17,18 @@
 <body ng-app="SigmaApp" ng-controller="SigmaController as sigma" ng-cloak>
 
   <md-toolbar class="md-toolbar-tools">
-    <md-button class="md-icon-button" aria-label="Menu">
+    <md-button class="md-icon-button" aria-label="Menu" ng-href="/">
       <img src="img/sigma-white.png" alt="Logo" style="width:20px;height:25px;">
     </md-button>
-    <h1>
+    <md-button aria-label="Sigma" ng-href="/">
       SIGMA
-    </h1>
+    </md-button>
     </md-button>
     <span flex></span>
-    <md-button aria-label="Latest">
+    <md-button aria-label="Latest" ng-href="/latest">
       Latest
     </md-button>
-    <md-button aria-label="Archives" href="/archives">
+    <md-button aria-label="Archives" ng-href="/archives">
       Archives
     </md-button>
   </md-toolbar>
