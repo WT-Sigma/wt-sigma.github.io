@@ -24,25 +24,11 @@
 
     <span flex></span>
 
-<<<<<<< HEAD
-    <md-button aria-label="Latest" ng-href="/latest">
-      Latest
-    </md-button>
-
-    <md-button aria-label="Archives" ng-href="/archives">
-      Archives
-    </md-button>
-
-    <md-button aria-label="Submit" ng-href="/submit">
-      Submit
-    </md-button>
-=======
     <div ng-repeat="page in pages">
       <md-button md-no-ink class="underline" aria-label={{ page }} ng-href="{{ '/' + page }}">
         {{ page }}
       </md-button>
     </div>
->>>>>>> cbe518425550054cbdaf1f138cc9196270d57921
 
   </md-toolbar>
 
