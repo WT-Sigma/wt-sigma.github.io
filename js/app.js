@@ -21,7 +21,7 @@ angular.module('SigmaApp', ['ngMaterial'])
       });
   })
   .controller('SigmaController', function($scope) {
-    console.log('Sigma initialized.')
+    $scope.pages = ["latest", "archives", "submit"]
   })
   .filter('range', function() {
     return function(input, total) {
