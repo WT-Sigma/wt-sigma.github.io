@@ -3,8 +3,11 @@
 <head>
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="style/template.css">
 
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+
+  <script src="js/app.js"></script>
 </head>
 
 <body ng-app="SigmaApp" ng-controller="SigmaController as sigma" ng-cloak>
@@ -21,6 +24,7 @@
 
     <span flex></span>
 
+<<<<<<< HEAD
     <md-button aria-label="Latest" ng-href="/latest">
       Latest
     </md-button>
@@ -32,6 +36,13 @@
     <md-button aria-label="Submit" ng-href="/submit">
       Submit
     </md-button>
+=======
+    <div ng-repeat="page in pages">
+      <md-button md-no-ink class="underline" aria-label={{ page }} ng-href="{{ '/' + page }}">
+        {{ page }}
+      </md-button>
+    </div>
+>>>>>>> cbe518425550054cbdaf1f138cc9196270d57921
 
   </md-toolbar>
 
