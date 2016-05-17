@@ -8,6 +8,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+
   <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
 
   <script src="js/app.js"></script>
@@ -15,33 +16,11 @@
 
 <body ng-app="SigmaApp" ng-controller="SigmaController as sigma" ng-cloak>
 
-  <md-toolbar class="md-toolbar-tools">
+  <ng-include src="'template.html'"></ng-include>
 
-    <md-button class="md-icon-button" aria-label="Menu" ng-href="/">
-      <img src="img/sigma-white.png" alt="Logo" style="width:20px;height:25px;">
-    </md-button>
-
-    <md-button aria-label="Sigma" ng-href="/">
-      SIGMA
-    </md-button>
-
-    <span flex></span>
-
-    <md-button aria-label="Latest" ng-href="/latest">
-      Latest
-    </md-button>
-
-    <md-button aria-label="Archives" ng-href="/archives">
-      Archives
-    </md-button>
-<<<<<<< HEAD
-    <md-button aria-label="Submit" href="/submit">
-      Submit
-    </md-button>
-=======
-
->>>>>>> bab4e4ccf9f5a3a9b1766f4b278d8cad91a627d8
-  </md-toolbar>
+  <h1 class="md-title">
+    Latest Edition of Sigma
+  </h1>
 
 </body>
 
