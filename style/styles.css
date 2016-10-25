@@ -29,17 +29,13 @@
 }
 
 .portfolio-logo {
-  background: url(../images/logo.png) 50% no-repeat;
-  background-size: cover;
-  height: 150px;
-  width: 150px;
-  margin: auto auto 10px;
+    font-size: 500%;
+    margin: auto auto 20px;
 }
 
 .is-compact .portfolio-logo {
-  height: 50px;
-  width: 50px;
-  margin-top: 7px;
+    font-size: 250%;
+    margin-top: 15px;
 }
 
 .portfolio-navigation-row {
@@ -169,4 +165,3 @@ footer {
   background-image: url(../images/footer-background.png);
   background-size: cover;
 }
-
